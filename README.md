@@ -90,7 +90,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+
 
 
 
@@ -144,9 +144,16 @@ See the [open issues](https://github.com/edcastanha/news_app/issues) for a list 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuindo
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+As contribuições são o que torna a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer serão muito apreciadas.
+
+Bifurque o projeto
+Crie o seu Branch Feature ( git checkout -b feature/AmazingFeature)
+Comprometa suas alterações ( git commit -m 'Add some AmazingFeature')
+Empurre para a filial ( git push origin feature/AmazingFeature)
+Abra uma solicitação pull
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -159,7 +166,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 
 
@@ -168,26 +175,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Edson Lourenço - [@your_twitter](https://twitter.com/edlourenzo) - edcastanha@gmail.com
 
-Link do Projeto: [https://github.com/edcastanha/news_app](https://github.com/edcastanha/news_app)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
+Demo do Projeto: [https://php-news-app.vercel.app/](php-news-app.vercel.app/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
