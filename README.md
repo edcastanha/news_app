@@ -1,12 +1,11 @@
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+<!-- PROJETOS DE ESCUDO
+*** Estou usando links de "estilo de referência" de markdown para facilitar a leitura.
+*** Os links de referência são colocados entre colchetes [] em vez de parênteses ().
+*** Veja no final deste documento a declaração das variáveis de referência
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -28,14 +27,13 @@
   <p align="center">
     Este é um projeto exemplo de aplicação Web em PHP, JQuery e MySQL, estruturação padrão MVC.
     <br />
-    <a href="https://github.com/edcastanha/news_app"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/edcastanha/news_app"><strong>Breve - Documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/edcastanha/news_app">View Demo</a>
+    <a href="https://github.com/edcastanha/news_app">Breve - View Demo</a>
     ·
     <a href="https://github.com/edcastanha/news_app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/edcastanha/news_app/issues">Request Feature</a>
   </p>
 </p>
 
@@ -43,84 +41,81 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Indece</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Wireframe de Base do Projeto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">O que foi utilizado</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Iniciando</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Pré-requisitos
+</a></li>
+        <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">CAso de USO</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#contact">Contato</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o projeto
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+Aqui está o porquê das escolhas:
+* Seu tempo deve ser focado em criar algo incrível. Um projeto que resolve um problema e ajuda os outros
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+* Você não deve fazer as mesmas tarefas repetidamente, como criar um README do zero, então a reutilização é fundamental para produtividade.
 
-### Built With
+* Você deve incorporar os princípios [DRY](https://pt.wikipedia.org/wiki/Don't_repeat_yourself) ao resto de sua vida: Então sorria!
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Obviamente, nenhum modelo atenderá a todos os projetos, pois suas necessidades podem ser diferentes. Portanto, estarei adicionando mais em um futuro próximo.
+
+### Construido
+
+Nesta seção listarei todas as principais estruturas usandas no projeto. Todos os add-ons / plug-ins
+
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
 
-
-
 <!-- GETTING STARTED -->
-## Getting Started
+## Inicialização
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Este é um exemplo de como você pode dar instruções sobre como configurar seu projeto localmente. Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
 
-### Prerequisites
+### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+Listarei o que será necessario para editar localmente a aplicação.
+* XAMP
+  ```php -S 127.0.0.1:80808 --
   ```
 
-### Installation
+
 ### Instalação
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Quando disponivel adicionarei link para Demo hospedada [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/edcastanha/news_app.git
    ```
-3. Install NPM packages
+3. CAso haja a utilização de pacotes NPM packages será disponibilizado
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Quando definido as variaveis de ambiente `config.js`
    ```JS
    const API_KEY = 'ENTER YOUR API';
    ```
@@ -128,11 +123,11 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## CAso de uso
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Uma breve descrição do escopo
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_Quando disponivel Documentação [Documentation](https://example.com)_
 
 
 
@@ -144,23 +139,6 @@ See the [open issues](https://github.com/edcastanha/news_app/issues) for a list 
 
 
 <!-- CONTRIBUTING -->
-## Contribuindo
-
-
-As contribuições são o que torna a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer serão muito apreciadas.
-
-Bifurque o projeto
-Crie o seu Branch Feature ( git checkout -b feature/AmazingFeature)
-Comprometa suas alterações ( git commit -m 'Add some AmazingFeature')
-Empurre para a filial ( git push origin feature/AmazingFeature)
-Abra uma solicitação pull
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 
 
 <!-- LICENSE -->
@@ -174,8 +152,6 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 ## Contato
 
 Edson Lourenço - [@your_twitter](https://twitter.com/edlourenzo) - edcastanha@gmail.com
-
-Demo do Projeto: [https://php-news-app.vercel.app/](php-news-app.vercel.app/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
