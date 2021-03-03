@@ -57,7 +57,7 @@
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">CAso de USO</a></li>
+    <li><a href="#usage">Caso de USO</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -100,9 +100,10 @@ Este é um exemplo de como você pode dar instruções sobre como configurar seu
 
 Listarei o que será necessario para editar localmente a aplicação.
 * XAMP
-  ```php -S 127.0.0.1:80808 --
-  ```
+    |-- PHP
+    |-- MySQL
 
+  
 
 ### Instalação
 
