@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NewsAPp | Postagens</title>
+    <link rel="stylesheet" type="text/css" href="public/editores/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/editores/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="padding: 0px; margin: 0px;">
+        <div class="jumbotron">
+            <h1 class="text-center">Publicações | NewsApp</h1>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 25px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pull-right">
+                    <button class="btn btn-success" id="show-add">Nova Publicação</button>
+                </div>
+                <div id="link-add" class="form-inline">
+                    <div class="form-group col-md-3">
+                        <input type="text" name="nome" id="nome" placeholder="Titulo" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" name="slogan" id="slogan" placeholder="Slogan" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" name="conteudo" id="conteudo" placeholder="Conteudo" class="form-control" required/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" id="autor" name="autor" placeholder="Autor" class="form-control" required />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="button" class="btn btn-primary" id="add" name="add">Salvar</button>
+                        <button type="button" href="javascript:void(0);" class="btn btn-default" id="cancel" name="add" onclick="$('#link-add').slideUp(400);$('#show-add').show(600);">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="records_content"></div>
+                <br>
+                <div class="col-md-offset-1 col-md-10" id="table_content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/editores/js/jquery-2.2.0.min.js"></script>
+    <script src="public/editores/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/editores/app.js"></script>
+</body>
+
+</html>
