@@ -17,7 +17,7 @@
     <!-- CABEÇALHO DO SITE, cabeçalho com menu e icone do site-->
     <header class="container">
         <a href="#"><h1 class="logo-cabecalho">News App</h1></a>
-       <button class="btn-menu cg-gradiente" value="MENU"><i class="fa fa-bars fa-lg"></i></button>
+       <button class="btn-menu cg-gradiente"><i class="fa fa-bars fa-lg"></i></button>
         <nav class="menu">
             <a class="btn-close"><i class="fas fa-times"></i></i></a>
             <ul>
@@ -28,21 +28,24 @@
             </ul>
         </nav>
     </header>
-
+    
     <!-- BANNER DO SITE, imagem com uma curta mensagem publicitária do site-->
 
-    <div class="conteiner">
+    <div class="banner">
         <div class="title">
+            <h2> News App! </h2>
             <h3> Fique atualizando, saiba o que acontece aqui e no mundo em tempo real! </h3>
         </div>
         <div class="fonte-banner">
-            <a>News App</a>
+            Imagem de <a href="https://pixabay.com/get/ge1779442242149887b35d4e44d0df3568b942dfa45fa680bd319cf38ae39b82018562218e72ab153200c5671f1662c97_1920.jpg" target="_blanck">Pixabay</a> por 
+            <a href="https://pixabay.com/pt/users/tayebmezahdia-4194100/" target="_blanck">Tayeb MEZAHDIA</a>
         </div>
     </div>
+    <!-- BANNER DO SITE, imagem com uma curta mensagem publicitária do site-->
 
     <!-- newsS, newss oferecidos pelo site-->
 
-    <main class="newss container">
+    <main class="container">
         <article class="news">
             <a href="#"><img src="./public/views/img/posts/article1.jpg" alt="Post 1"></a>
             <div class="fonte">
@@ -53,6 +56,17 @@
                 <h4>Slogan da News 01</h4>
                 <p>O velho e bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolor ratione, illum possimus optio itaque, sit libero reprehenderit unde tempora maxime! Obcaecati, vitae. Libero expedita natus repellat molestias obcaecati delectus?.</p><br/>
             </div>
+        </article>
+        <article class="news">
+            <a href="#"><img src="./public/views/img/posts/article2.jpg" alt="Crie e venda seu look personalizado"></a>
+            <div class="fonte">
+                Imagem de <a href="#" target="_blanck">wendy buiter</a> por <a href="#" target="_blanck">Arts Foto</a>
+            </div>
+            <div class="inner">
+              <a href="#">Noticia 2</a>
+              <h4>Slogan da News 02</h4>
+              <p>O velho e bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolor ratione, illum possimus optio itaque, sit libero reprehenderit unde tempora maxime! Obcaecati, vitae. Libero expedita natus repellat molestias obcaecati delectus?.</p><br/>
+          </div>
         </article>
         <article class="news">
             <a href="#"><img src="./public/views/img/posts/article2.jpg" alt="Crie e venda seu look personalizado"></a>
@@ -104,5 +118,6 @@
         $(".menu").hide();
     });
 </script>
+
 </body>
 </html> 
