@@ -87,8 +87,9 @@ Obviamente, nenhum modelo atenderá a todos os projetos, pois suas necessidades 
 
 Nesta seção listarei todas as principais estruturas usandas no projeto. Todos os add-ons / plug-ins
 
-* [Bootstrap](https://getbootstrap.com)
+* [PHP](https://php.com)
 * [JQuery](https://jquery.com)
+* [CSS](https://css3.com)
 
 
 <!-- GETTING STARTED -->
@@ -111,11 +112,11 @@ Listarei o que será necessario para editar localmente a aplicação.
    ```sh
    git clone https://github.com/edcastanha/news_app.git
    ```
-3. CAso haja a utilização de pacotes NPM packages será disponibilizado
-   ```sh
+3. Caso haja a utilização de pacotes NPM packages será disponibilizado
+   ```
    npm install
    ```
-4. Quando definido as variaveis de ambiente `config.js`
+4. Quando definido as variaveis de ambiente `config.php`
    ```JS
    const API_KEY = 'ENTER YOUR API';
    ```
@@ -167,5 +168,5 @@ Edson Lourenço - [@your_twitter](https://twitter.com/edlourenzo) - edcastanha@g
 [license-shield]: https://img.shields.io/github/license/edcastanha/news_app.svg?style=for-the-badge
 [license-url]: https://github.com/edcastanha/news_app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/edcastanha
+[linkedin-url]: https://www.linkedin.com/in/edlourenzo
 [product-screenshot]: images/screenshot.png
