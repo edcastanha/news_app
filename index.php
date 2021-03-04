@@ -6,7 +6,7 @@
 if(isset($_GET['view'])){
     //para evitar erro por despadronização de case sensitive nas rotas utilizarei a função php strTolower
     if(file_exists('core/controles/'.strtolower($_GET['view'].'Controler.php'))){
-        /*a variavel "views" sendo varida incluirá o contrle equivalente 
+        /*a variavel "views" sendo varida incluirá o controle equivalente evitando a visibilidade da nomenclatura completa. 
         (exemplo: ?view=autores => /autoresControler.php será apresentado)
         */
         include('core/controles/'.strtolower($_GET['view'].'Controler.php'));
@@ -19,5 +19,5 @@ if(isset($_GET['view'])){
 
 }else{
     //Rota padrão
-    include('./public/views/index.php');
+    include('core/controles/indexControler.php');
 } 
