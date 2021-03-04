@@ -19,5 +19,5 @@ if(isset($_GET['view'])){
 
 }else{
     //Rota padrão
-    include('core/controles/indexControler.php');
+    include('./public/views/index.php');
 } 

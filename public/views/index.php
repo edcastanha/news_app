@@ -8,15 +8,15 @@
     <meta name="keywords" content="News , Noticias, Point">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Edson Lourenço">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./public/views/css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" href="./public/views/img/icon.png">
 </head>
 <body>
     <!-- CABEÇALHO DO SITE, cabeçalho com menu e icone do site-->
     <header class="container">
-        <a href="index.html"><h1 class="logo-cabecalho">News App</h1></a>
+        <a href="#"><h1 class="logo-cabecalho">News App</h1></a>
        <button class="btn-menu cg-gradiente" value="MENU"><i class="fa fa-bars fa-lg"></i></button>
         <nav class="menu">
             <a class="btn-close"><i class="fas fa-times"></i></i></a>
@@ -31,22 +31,20 @@
 
     <!-- BANNER DO SITE, imagem com uma curta mensagem publicitária do site-->
 
-    <div class="banner">
+    <div class="conteiner">
         <div class="title">
-            <h2> News App! </h2>
             <h3> Fique atualizando, saiba o que acontece aqui e no mundo em tempo real! </h3>
         </div>
         <div class="fonte-banner">
-            Imagem de <a href="https://pixabay.com/get/ge1779442242149887b35d4e44d0df3568b942dfa45fa680bd319cf38ae39b82018562218e72ab153200c5671f1662c97_1920.jpg" target="_blanck">Pixabay</a> por 
-            <a href="https://pixabay.com/pt/users/tayebmezahdia-4194100/" target="_blanck">Tayeb MEZAHDIA</a>
+            <a>News App</a>
         </div>
     </div>
 
-    <!-- SERVICOS, servicos oferecidos pelo site-->
+    <!-- newsS, newss oferecidos pelo site-->
 
-    <main class="servicos container">
-        <article class="servico">
-            <a href="#"><img src="img/article1.jpg" alt="Post 1"></a>
+    <main class="newss container">
+        <article class="news">
+            <a href="#"><img src="./public/views/img/posts/article1.jpg" alt="Post 1"></a>
             <div class="fonte">
               Imagem de <a href="#" target="_blanck">wendy buiter</a> por <a href="#" target="_blanck">Arts Foto</a>
           </div>
@@ -56,8 +54,8 @@
                 <p>O velho e bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolor ratione, illum possimus optio itaque, sit libero reprehenderit unde tempora maxime! Obcaecati, vitae. Libero expedita natus repellat molestias obcaecati delectus?.</p><br/>
             </div>
         </article>
-        <article class="servico">
-            <a href="#"><img src="img/article2.jpg" alt="Crie e venda seu look personalizado"></a>
+        <article class="news">
+            <a href="#"><img src="./public/views/img/posts/article2.jpg" alt="Crie e venda seu look personalizado"></a>
             <div class="fonte">
                 Imagem de <a href="#" target="_blanck">wendy buiter</a> por <a href="#" target="_blanck">Arts Foto</a>
             </div>
