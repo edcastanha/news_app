@@ -1,1 +1,2 @@
-require_once();
+<?php
+include('./views/index.php');

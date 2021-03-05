@@ -1,4 +1,4 @@
 <?php
-//Rota paea view Autores
+//Rota para dash Editores
 
-include('./public/editores/index.html');
+include('./editor.php');

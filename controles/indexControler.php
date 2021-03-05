@@ -1,3 +1,5 @@
 <?php
-//Rota padrão
-include('./views/index.php');
+
+
+//Rota padrão da home
+include('./home.php');
