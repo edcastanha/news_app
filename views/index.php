@@ -1,3 +1,7 @@
+<?php
+define("URL","http://localhost/news_app/");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,15 +12,15 @@
     <meta name="keywords" content="News , Noticias, Point">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Edson Lourenço">
-    <link rel="stylesheet" type="text/css" href="./public/views/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php $URL ?>views/css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="icon" href="./public/views/img/logo.png">
+    <link rel="icon" href="<?php $URL ?>views/img/icon.png">
 </head>
 <body>
     <!-- CABEÇALHO DO SITE, cabeçalho com menu e icone do site-->
     <header class="container">
-        <a href="index.html"><h1 class="logo-cabecalho">News App</h1></a>
+        <a href="<?php $URL ?>"><h1 class="logo-cabecalho">News App</h1></a>
        <button class="btn-menu cg-gradiente" value="MENU"><i class="fa fa-bars fa-lg"></i></button>
         <nav class="menu">
             <a class="btn-close"><i class="fas fa-times"></i></i></a>
@@ -41,11 +45,10 @@
         </div>
     </div>
 
-    <!-- SERVICOS, servicos oferecidos pelo site-->
-
-    <main class="servicos container">
-        <article class="servico">
-            <a href="#"><img src="./public/views/img/posts/article1.jpg" alt="Post 1"></a>
+    <!-- postsS, postss oferecidos pelo site-->
+<div class="slide">
+<article class="posts">
+            <a href="#"><img src="<?php $URL ?>views/img/posts/article1.jpg" alt="Post 1"></a>
             <div class="fonte">
               Imagem de <a href="#" target="_blanck">wendy buiter</a> por <a href="#" target="_blanck">Arts Foto</a>
           </div>
@@ -55,8 +58,8 @@
                 <p>O velho e bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolor ratione, illum possimus optio itaque, sit libero reprehenderit unde tempora maxime! Obcaecati, vitae. Libero expedita natus repellat molestias obcaecati delectus?.</p><br/>
             </div>
         </article>
-        <article class="servico">
-            <a href="#"><img src="./public/views/img/posts/article2.jpg" alt="Post 2"></a>
+        <article class="posts">
+            <a href="#"><img src="<?php $URL ?>views/img/posts/article2.jpg" alt="Post 2"></a>
             <div class="fonte">
                 Imagem de <a href="#" target="_blanck">wendy buiter</a> por <a href="#" target="_blanck">Arts Foto</a>
             </div>
@@ -66,6 +69,13 @@
               <p>O velho e bom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolor ratione, illum possimus optio itaque, sit libero reprehenderit unde tempora maxime! Obcaecati, vitae. Libero expedita natus repellat molestias obcaecati delectus?.</p><br/>
           </div>
         </article>
+        
+        </article>
+
+</div>
+
+    <main class=" container">
+       
     </main>
 
     <!-- NEWSLETTER, boletim informativo ou mensagem eletrônica destinado a assinantes do site-->
