@@ -19,8 +19,7 @@ img {max-width: 100%}
     ul {list-style: none;}
     img {max-width: 100%}
     
-    /*====== CONTAINER ======*/
-    .container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+  
     
     /*====== GRADIENTE ======*/
     
@@ -28,7 +27,7 @@ img {max-width: 100%}
     
     /*CABEÇALHO*/
     
-    .logo-cabecalho {width: 56px; height: 56px; float: left; background: url(../img/logo-mobile.png) center center/56px no-repeat; font-size: 0;}
+    .logo-cabecalho {width: 56px; height: 56px; float: left; background: url(/views/img/logo-mobile.png) center center/56px no-repeat; font-size: 0;}
     .btn-menu {width: 56px; height: 56px; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer;}
     
     /*MENU*/
@@ -51,10 +50,10 @@ img {max-width: 100%}
     .fonte {font-size: 10pt; padding-left: 2%;}
     .fonte a {color: #130400; text-decoration: none; font-weight: bold;}
     
-    /*SERVICOS*/
+    /*POSTS*/
     
-    .servico {width: 100%; text-align: left; margin-bottom: 3%; background-color: #fff; border-radius: 7px;}
-    .servico img {border-radius: 7px 7px 0 0;}
+    .posts {width: 100%; text-align: left; margin-bottom: 3%; background-color: #fff; border-radius: 7px;}
+    .posts img {border-radius: 7px 7px 0 0;}
     .inner {padding: 7%;}
     .inner a {font-size: 1.5em; color: #130400; font-weight: 700;}
     .inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%;}
@@ -91,8 +90,8 @@ img {max-width: 100%}
     /* SMALL DEVICES - TABLETS */
     
     @media screen and (min-width: 768px){
-        .servico {width: 49%; float: left; margin-right: 2%;}
-        .servico:nth-child(2) {margin-right: 0;}
+        .posts {width: 49%; float: left; margin-right: 2%;}
+        .posts:nth-child(2) {margin-right: 0;}
         .newsletter h2 {font-size: 2em;}
         .newsletter h3 {font-size: 1.5em;}
         .newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
@@ -105,8 +104,8 @@ img {max-width: 100%}
         .title {width: 70%; float: left; text-align: left;}
         .title h2 {font-size: 3em;}
         .title h3 {font-size: 2em;}
-        .servico {width: 48%;}
-        .servico:nth-child(2){margin-right: 2%;}
+        .posts {width: 48%;}
+        .posts:nth-child(2){margin-right: 2%;}
         .newsletter input {width: 60%; float: none;}
         .newsletter button {width: 20%; float: none;}
     }
@@ -150,8 +149,8 @@ img {max-width: 100%}
 
 /*POSTS*/
 
-.servico {width: 100%; text-align: left; margin-bottom: 3%; background-color: #fff; border-radius: 7px;}
-.servico img {border-radius: 7px 7px 0 0;}
+.posts {width: 100%; text-align: left; margin-bottom: 3%; background-color: #fff; border-radius: 7px;}
+.posts img {border-radius: 7px 7px 0 0;}
 .inner {padding: 7%;}
 .inner a {font-size: 1.5em; color: #130400; font-weight: 700;}
 .inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%;}
@@ -188,8 +187,8 @@ img {max-width: 100%}
 /* SMALL DEVICES - TABLETS */
 
 @media screen and (min-width: 768px){
-    .servico {width: 49%; float: left; margin-right: 2%;}
-    .servico:nth-child(2) {margin-right: 0;}
+    .posts {width: 49%; float: left; margin-right: 2%;}
+    .posts:nth-child(2) {margin-right: 0;}
     .newsletter h2 {font-size: 2em;}
     .newsletter h3 {font-size: 1.5em;}
     .newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
@@ -202,8 +201,8 @@ img {max-width: 100%}
     .title {width: 70%; float: left; text-align: left;}
     .title h2 {font-size: 3em;}
     .title h3 {font-size: 2em;}
-    .servico {width: 48%;}
-    .servico:nth-child(2){margin-right: 2%;}
+    .posts {width: 48%;}
+    .posts:nth-child(2){margin-right: 2%;}
     .newsletter input {width: 60%; float: none;}
     .newsletter button {width: 20%; float: none;}
 }
