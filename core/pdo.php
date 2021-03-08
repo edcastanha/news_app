@@ -1,4 +1,7 @@
 <?php
+
+//Arquivo de testes para rotinas PDO / Mysql
+
   $host =  'localhost';
   $user = 'root';
   $password = 'newsapp';
@@ -7,7 +10,7 @@
   // Set DSN
   $dsn = 'mysql:host='. $host .';dbname='. $dbname;
 
-  // Create a PDO instance
+  // Criando a instancia PDO
   $pdo = new PDO($dsn, $user, $password);
   $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
   $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
@@ -27,20 +30,20 @@
   # (prepare & execute)
 
   // BUSCA POR VARIAVEL
-  $author = 'Brad';
+  $nome = 'Brad';
   $id = 1;
   $limit = 1;
 
   // Positional Params
   $sql = 'SELECT * FROM tbnoticias WHERE idautor = ? && is_published = ? LIMIT ?';
   $stmt = $pdo->prepare($sql);
-  $stmt->execute([$author,  $limit]);
+  $stmt->execute([$nome,  $limit]);
   $noticias = $stmt->fetchAll();
 
   // Nomeando variaveis de busca
-  // $sql = 'SELECT * FROM tbnoticia WHERE author = :author && is_published = :is_published';
+  // $sql = 'SELECT * FROM tbnoticia WHERE nome = :nome && is_published = :is_published';
   // $stmt = $pdo->prepare($sql);
-  // $stmt->execute(['author' => $author, 'is_published' => $is_published]);
+  // $stmt->execute(['nome' => $nome, 'is_published' => $is_published]);
   // $tbnoticias = $stmt->fetchAll();
 
   // //var_dump($tbnoticias);
@@ -69,9 +72,9 @@
   // $conteudo = 'cuiahbxiuawshxaijuhcnjanbc cbncijabncipabciujb';
   // $slogan = 'jhbcbelcbla eace';
 
-  // $sql = 'INSERT INTO tbnoticias(title, body, author) VALUES(:title, :body, :author)';
+  // $sql = 'INSERT INTO tbnoticias(title, body, nome) VALUES(:title, :body, :nome)';
   // $stmt = $pdo->prepare($sql);
-  // $stmt->execute(['title' => $title, 'body' => $body, 'author' => $author]);
+  // $stmt->execute(['title' => $title, 'body' => $body, 'nome' => $nome]);
   // echo 'Post Added';
 
   // UPDATE 
