@@ -1,12 +1,13 @@
 <?php
-
-require( __DIR__ . '/core/selectposts.php');
-
+ 
+ require( __DIR__ . '/header.php');
+include_once( __DIR__ . '/core/selectposts.php');
+include_once( __DIR__ . '/core/funcoes.php');
 
 $db = new ListaPosts;
-$dados = $db->selecao_all();
- 
-require( __DIR__ . '/header.php');
+$noticias = $db->selecao_all();
+
+//var_dump($noticias);
 ?>
     <!-- BANNER DO SITE, imagem com uma curta mensagem publicitária do site-->
 
@@ -27,7 +28,7 @@ require( __DIR__ . '/header.php');
 
         <!-- POSTS -->
         <?php 
-        foreach($dados as $post)
+        foreach($noticias as $post)
         { 
             ?>
 

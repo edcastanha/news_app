@@ -1,8 +1,4 @@
 <?php
-session_start();
-
-
-require( __DIR__ . '/core/funcoes.php');
 require( __DIR__ . '/core/selectcategorias.php');
 
 $db = new ListaCategorias;
