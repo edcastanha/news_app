@@ -1,5 +1,5 @@
 <?php
-    include('config.php');
+    include('../core/dbconfig.php');
     if(isset($_POST['acao'])){
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];

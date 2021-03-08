@@ -1,3 +1,12 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 08-Mar-2021 às 11:58
+-- Versão do servidor: 10.4.17-MariaDB
+-- versão do PHP: 8.0.2
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -9,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `sql10397145`
+-- Banco de dados: `newsapp`
 --
 
 -- --------------------------------------------------------
@@ -31,8 +40,8 @@ CREATE TABLE `tbautores` (
 --
 
 INSERT INTO `tbautores` (`id`, `nome`, `email`, `senha`, `created_at`) VALUES
-(11, 'Ruan Lourenço', 'ruan@news.com', 'dcchsbxiuwbhxw', '2021-03-04 18:39:31'),
-(14, 'Carlos Alberto', 'a.alberto@sbt.com', 'daoih657', '2021-03-04 19:51:25'),
+(11, 'Edson', 'ruan@news.com', '123123', '2021-03-04 18:39:31'),
+(14, 'CArlos Alberto', 'a.alberto@sbt.com', 'daoih657', '2021-03-04 19:51:25'),
 (15, 'Zezé Di Camargo', 'zeze@cantor.com.br', 'zzzzzeeee111', '2021-03-04 19:52:29');
 
 -- --------------------------------------------------------
@@ -60,26 +69,27 @@ INSERT INTO `tbcategorias` (`id`, `nome`, `descricao`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tbports`
+-- Estrutura da tabela `tbnoticias`
 --
 
-CREATE TABLE `tbports` (
+CREATE TABLE `tbnoticias` (
   `id` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,
   `sloga` varchar(255) NOT NULL,
   `conteudo` text NOT NULL,
   `autorId` int(11) NOT NULL,
   `categoriaId` int(11) NOT NULL,
-  `criado` datetime DEFAULT current_timestamp()
+  `criado` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `tbports`
+-- Extraindo dados da tabela `tbnoticias`
 --
 
-INSERT INTO `tbports` (`id`, `titulo`, `sloga`, `conteudo`, `autorId`, `categoriaId`, `criado`) VALUES
+INSERT INTO `tbnoticias` (`id`, `titulo`, `sloga`, `conteudo`, `autorId`, `categoriaId`, `criado`) VALUES
 (1, 'Primeira Noticia', 'Saiba tudo em Primeira mão', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 1, 2, '2021-03-03 23:39:05'),
-(2, 'Segunda News', 'Sua segunda News App', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 1, 1, '2021-03-03 23:40:59');
+(2, 'Segunda News', 'Sua segunda News App', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 1, 1, '2021-03-03 23:40:59'),
+(3, 'Tercewira Noticia', 'Saiba tudo em Primeira mão', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\nis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 1, 3, '2021-03-08 23:39:05');
 
 --
 -- Índices para tabelas despejadas
@@ -100,9 +110,9 @@ ALTER TABLE `tbcategorias`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Índices para tabela `tbports`
+-- Índices para tabela `tbnoticias`
 --
-ALTER TABLE `tbports`
+ALTER TABLE `tbnoticias`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -122,10 +132,10 @@ ALTER TABLE `tbcategorias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de tabela `tbports`
+-- AUTO_INCREMENT de tabela `tbnoticias`
 --
-ALTER TABLE `tbports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `tbnoticias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

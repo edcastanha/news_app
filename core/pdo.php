@@ -1,8 +1,8 @@
 <?php
   $host =  'localhost';
   $user = 'root';
-  $password = '123456';
-  $dbname = 'pdoposts';
+  $password = 'newsapp';
+  $dbname = '';
 
   // Set DSN
   $dsn = 'mysql:host='. $host .';dbname='. $dbname;
@@ -14,97 +14,91 @@
 
   # PDO QUERY
 
-  // $stmt = $pdo->query('SELECT * FROM posts');
+  // $stmt = $pdo->query('SELECT * FROM tbtbnoticias');
 
   // while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-  //   echo $row['title'] . '<br>';
+  //   echo $row['titulo'] . '<br>';
   // }
 
   // while($row = $stmt->fetch()){
-  //   echo $row->title . '<br>';
+  //   echo $row->titulo . '<br>';
   // }
 
-  # PREPARED STATEMENTS (prepare & execute)
+  # (prepare & execute)
 
-  // UNSAFE
-  //$sql = "SELECT * FROM posts WHERE author = '$author'";
-
-  // FETCH MULTIPLE POSTS
-
-  // User Input
+  // BUSCA POR VARIAVEL
   $author = 'Brad';
-  $is_published = true;
   $id = 1;
   $limit = 1;
 
   // Positional Params
-  $sql = 'SELECT * FROM posts WHERE author = ? && is_published = ? LIMIT ?';
+  $sql = 'SELECT * FROM tbnoticias WHERE idautor = ? && is_published = ? LIMIT ?';
   $stmt = $pdo->prepare($sql);
-  $stmt->execute([$author, $is_published, $limit]);
-  $posts = $stmt->fetchAll();
+  $stmt->execute([$author,  $limit]);
+  $noticias = $stmt->fetchAll();
 
-  // Named Params
-  // $sql = 'SELECT * FROM posts WHERE author = :author && is_published = :is_published';
+  // Nomeando variaveis de busca
+  // $sql = 'SELECT * FROM tbnoticia WHERE author = :author && is_published = :is_published';
   // $stmt = $pdo->prepare($sql);
   // $stmt->execute(['author' => $author, 'is_published' => $is_published]);
-  // $posts = $stmt->fetchAll();
+  // $tbnoticias = $stmt->fetchAll();
 
-  // //var_dump($posts);
-  foreach($posts as $post){
+  // //var_dump($tbnoticias);
+  foreach($noticias as $post){
     echo $post->title . '<br>';
   }
 
-  // FETCH SINGLE POST
+  //BUSCA POR POST
 
-  // $sql = 'SELECT * FROM posts WHERE id = :id';
+  // $sql = 'SELECT * FROM tbnoticias WHERE id = :id';
   // $stmt = $pdo->prepare($sql);
   // $stmt->execute(['id' => $id]);
   // $post = $stmt->fetch();
 
   // echo $post->body;
 
-  // GET ROW COUNT
-  // $stmt = $pdo->prepare('SELECT * FROM POSTS WHERE author = ?');
-  // $stmt->execute([$author]);
+  // ROW COUNT
+  // $stmt = $pdo->prepare('SELECT * FROM tbnoticias WHERE criado = ?');
+  // $stmt->execute([$criado]);
   // $postCount = $stmt->rowCount();
 
   // echo $postCount;
 
   // INSERT DATA
-  // $title = 'Post Five';
-  // $body = 'This is post five';
-  // $author = 'Kevin';
+  // $title = 'Primeiro Post';
+  // $conteudo = 'cuiahbxiuawshxaijuhcnjanbc cbncijabncipabciujb';
+  // $slogan = 'jhbcbelcbla eace';
 
-  // $sql = 'INSERT INTO posts(title, body, author) VALUES(:title, :body, :author)';
+  // $sql = 'INSERT INTO tbnoticias(title, body, author) VALUES(:title, :body, :author)';
   // $stmt = $pdo->prepare($sql);
   // $stmt->execute(['title' => $title, 'body' => $body, 'author' => $author]);
   // echo 'Post Added';
 
-  // UPDATE DATA
+  // UPDATE 
   // $id = 1;
   // $body = 'This is the updated post';
 
-  // $sql = 'UPDATE posts SET body = :body WHERE id = :id';
+  // $sql = 'UPDATE tbnoticias SET conteudo = :body WHERE id = :id';
   // $stmt = $pdo->prepare($sql);
-  // $stmt->execute(['body' => $body, 'id' => $id]);
+  // $stmt->execute(['conteudo' => $body, 'id' => $id]);
   // echo 'Post Updated';
 
-  // DELETE DATA
+  // DELETE 
   // $id = 3;
 
-  // $sql = 'DELETE FROM posts WHERE id = :id';
+  // $sql = 'DELETE FROM tbnoticias WHERE id = :id';
   // $stmt = $pdo->prepare($sql);
   // $stmt->execute(['id' => $id]);
   // echo 'Post Deleted';
 
-  // SEARCH DATA
+  // BUSCA LIKE %
   // $search = "%f%";
-  // $sql = 'SELECT * FROM posts WHERE title LIKE ?';
+  // $sql = 'SELECT * FROM tbnoticias WHERE title LIKE ?';
   // $stmt = $pdo->prepare($sql);
   // $stmt->execute([$search]);
-  // $posts = $stmt->fetchAll();
+  // $tbnoticias = $stmt->fetchAll();
 
-  // foreach($posts as $post){
+  // foreach($tbnoticias as $post){
   //   echo $post->title . '<br>';
   // }
   
