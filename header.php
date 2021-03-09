@@ -43,7 +43,7 @@ foreach($dados as $item){
 }
 ?>
                 </li>
-                <li><a href="admin/index.php">Login</a></li>
+               
             </ul>
         </nav>
     </header>
