@@ -1,39 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
 
-<?php
-include('../core/dbconfig.php');
-if (isset($_POST['acao'])) {
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+</head>
+<body>
 
-    $sql = $pdo->prepare("SELECT * FROM tbautores WHERE nome = ?");
-    $sql->execute([$usuario]);
-    //var_dump($sql->rowCount());
-    if ($sql->rowCount() == 1) {
-        $info = $sql->fetch();
-        var_dump($senha);
-        var_dump($info['senha']);
-        var_dump(password_verify($senha, $info['senha']));
-        if (password_verify($senha, $info['senha'])) {
-            $_SESSION['login'] = true;
-            $_SESSION['id'] = $info['id'];
-            $_SESSION['usuario'] = $info['nome'];
-            header("Location: main.php");
-            die();
-        } else {
-            //Erro
-            echo '<div class="box_erro_login"><p><i class="fas fa-exclamation-circle"></i> Usuário ou senha incorretos!</p></div>';
-        }
-    } else {
-        //Erro
-        echo '<div class="box_erro_login"><p><i class="fas fa-exclamation-circle"></i> Usuário não encontrado.</p></div>';
-    }
-}
-?>
+<div class="container">
 
+    <header class="menu">
+    <a href="<?php $URL ?>"><h1 class="logo-cabecalho">News App</h1></a>
+       <button class="btn-menu cg-gradiente" value="MENU"><i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fas fa-times"></i></i></a>
+            <ul>
+                <li><a href="#">Dashboard</a></li>                
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Categorias</a></li>                
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+</header>
+    
 
-<form method="post">
-    <input type="text" name="usuario" placeholder="Usuário">
-    <input type="password" name="senha" placeholder="Senha">
-    <input type="submit" value="Entrar" name="acao">
-</form>
+</div>
+    
+</body>
+</html>

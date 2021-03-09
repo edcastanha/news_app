@@ -5,7 +5,7 @@ include_once( __DIR__ . '/core/selectposts.php');
 include_once( __DIR__ . '/core/funcoes.php');
 
 $db = new ListaPosts;
-$noticias = $db->selecao_all();
+$noticias = $db->selectAll();
 
 //var_dump($noticias);
 ?>

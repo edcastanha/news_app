@@ -90,7 +90,6 @@ img {
 }
 
 /*BANNER*/
-
 .banner {
   background: url(../img/banner.jpg) no-repeat fixed;
   width: 100%;
@@ -132,7 +131,7 @@ img {
   font-weight: bold;
 }
 
-/*POSTS*/
+/*NOTICIAS*/
 
 .posts {
   width: 100%;
@@ -142,7 +141,7 @@ img {
   border-radius: 7px;
 }
 .posts img {
-    width: 80%;
+  width: 100%;
   border-radius: 7px 7px 0 0;
 }
 .inner {
@@ -164,24 +163,53 @@ img {
   line-height: 1.5em;
 }
 
-
-
-/*POSTS*/
+/*LEITURA*/
 
 .artigo {
-  width: 900px;
-  text-align: left;
-  margin-bottom: auto;
-  background-color: #fff;
+  height: max-content;
+  width: 100%;
+  text-align: justify;
+  margin-bottom: auto 5rem;
+  background-color: rgb(241, 239, 239);
   border-radius: 0px;
+  text-size-adjust: 1px;
 }
 .artigo img {
-    width: 80%;
+  padding: 2rem;
+  width: 100%;
   border-radius: 7px 7px 0 0;
 }
+.artigo h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #000000;
+  margin-top: 2%;
+}
+.artigo h4 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-align: left;
+  color: #050fa0;
+  margin: 1rem;
+}
 
+.artigo strong{
+  text-align:right ;
+  margin: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 1.4px;
+  color: #383bfd;
+}
 
-
+.artigo p{
+  text-indent: 1.5em;
+  margin-top: 0 ;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 /*NEWSLETTER*/
 

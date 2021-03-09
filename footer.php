@@ -9,8 +9,6 @@
                     Copyright <a href="#" target="_blanck"><i class="far fa-copyright"></i></a> News App 2021. Todos os direitos reservados.
                 </p>
             </footer>
-
-
             <!-- A função desse script e gerar a abertura e o fechamento do menu-->
 
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

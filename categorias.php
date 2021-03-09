@@ -1,8 +1,8 @@
 <?php
-require_once(__DIR__ . '/header.php');
+
 require_once(__DIR__ . '/core/funcoes.php');
 require_once(__DIR__ . '/core/postscategoria.php');
-
+require_once(__DIR__ . '/header.php');
 
 //Verificando é temos uma solicitação com ID (GET)
 if (isset($_GET['id'])) {

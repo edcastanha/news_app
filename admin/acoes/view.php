@@ -1,6 +1,6 @@
 <?php
 
-	require_once('../core/dbconfig.php');
+	require_once('core/dbconfig.php');
 	global $con;
 
 	$query = $con->prepare("SELECT `id`, `nome`, `email`, `senha` FROM `tbautores` order by id DESC");
