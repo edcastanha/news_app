@@ -8,11 +8,11 @@ class PostsCategoria{
     public function select_id($post_id){
         global $pdo;
 
-        $query = $pdo->prepare("SELECT * FROM `tbnoticias` WHERE categoriaid= ?");
+        $query = $pdo->prepare("SELECT * FROM `tbnoticias` WHERE categoriaId= ?");
         $query->bindValue(1, $post_id);
         $query->execute();
 
-        return $query->fetch();
+        return $query->fetchAll();
 
     }
 
