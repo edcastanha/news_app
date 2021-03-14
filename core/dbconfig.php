@@ -1,10 +1,10 @@
 <?php
 
-	$host = 'localhost';
+	$host = '108.179.253.205';
 	$port = '3306';
-	$base   = 'newsapp';
-	$usuario = 'root';
-	$senha = '';
+	$base   = 'edrive90_teste';
+	$usuario = 'edrive90_news';
+	$senha = 'ep4X1!br';
 
 	
 try{
